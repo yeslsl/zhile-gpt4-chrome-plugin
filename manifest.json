@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Filter GPT4 Accounts",
+  "version": "1.0",
+  "description": "Filter GPT4 Accounts",
+  "content_scripts": [
+    {
+      "matches": ["https://chat-shared2.zhile.io/*"], // 替换为您要匹配的页面 URL
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
